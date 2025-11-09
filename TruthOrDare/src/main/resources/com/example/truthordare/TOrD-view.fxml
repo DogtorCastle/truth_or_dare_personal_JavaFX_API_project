@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="960.0" spacing="100.0" style="-fx-background-color: #00aaaa;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.truthordare.TOrDController">
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+    </padding>
+
+    <Label fx:id="displayText" alignment="CENTER" prefHeight="230.0" prefWidth="980.0" text="TRUTH OR DARE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Century Gothic Bold" size="34.0" />
+        </font>
+    </Label>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+        <children>
+            <Button alignment="CENTER" onAction="#onTruthButtonClick" style="-fx-background-color: #3333cc; -fx-border-color: #000000; -fx-border-insets: -1;" text="TRUTH" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="34.0" />
+                </font>
+            </Button>
+            <Label fx:id="orText" alignment="CENTER" prefHeight="100.0" prefWidth="117.0" text="OR" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="34.0" />
+                </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="417.0" layoutY="35.0" onAction="#onDareButtonClick" style="-fx-background-color: #cc3333; -fx-border-color: #000000; -fx-border-insets: -1;" text="DARE" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="34.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+   <ChoiceBox prefWidth="150.0" scaleY="2.0"/>
+</VBox>

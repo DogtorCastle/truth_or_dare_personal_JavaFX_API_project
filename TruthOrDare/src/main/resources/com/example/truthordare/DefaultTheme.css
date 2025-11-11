@@ -1,0 +1,31 @@
+background {
+    -fx-background-color: #00aaaa; /* default background color */
+}
+
+.title-label {
+    -fx-text-fill: white;
+}
+
+.or-label {
+    -fx-text-fill: white;
+}
+
+.display-label {
+    -fx-text-fill: white;
+}
+
+.info-label {
+    -fx-text-fill: white;
+}
+
+.truth-button {
+    -fx-background-color: #3333cc;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}
+
+.dare-button {
+    -fx-background-color: #cc3333;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+}

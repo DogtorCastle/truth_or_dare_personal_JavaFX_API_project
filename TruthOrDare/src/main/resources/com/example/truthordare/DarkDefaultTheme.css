@@ -1,6 +1,6 @@
 /*Each of these only specifies changes in colour, not of font etc. (except for .choice-box)*/
 .background {
-    -fx-background-color: #00aaaa; /* Default background color (teal) */
+    -fx-background-color: #004444; /* Default background color (teal) */
 }
 
 /* Labels */
@@ -10,15 +10,15 @@
 
 /* Buttons */
 .truth-button {
-    -fx-background-color: #3333cc; /* Deep blue background */
+    -fx-background-color: #5555cc; /* Deep blue background */
     -fx-text-fill: white;          /* White text */
-    -fx-border-color: black;       /* Black border */
+    -fx-border-color: white;       /* Black border */
 }
 
 .dare-button {
-    -fx-background-color: #cc3333; /* Deep red background */
+    -fx-background-color: #cc5555; /* Deep red background */
     -fx-text-fill: white;          /* White text */
-    -fx-border-color: black;       /* Black border */
+    -fx-border-color: white;       /* Black border */
 }
 
 /*Choice boxes*/
@@ -27,14 +27,14 @@
 }
 
 .choice-box {
-    -fx-background-color: #ccffff;
+    -fx-background-color: #0e0044;
     -fx-background-radius: 10;
 }
 .choice-box .label {
-    -fx-text-fill: black;
+    -fx-text-fill: white;
     -fx-font-family: "Century Gothic Bold";
     -fx-font-size: 12px;
 }
 .choice-box .context-menu {
-    -fx-background-color: #ccffff;
+    -fx-background-color: #0e0044;
 }

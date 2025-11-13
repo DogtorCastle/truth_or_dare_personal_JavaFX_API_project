@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="100.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.truthordare.TOrDController">
+<VBox fx:id="background" alignment="CENTER" spacing="100.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.truthordare.TOrDController">
     <padding>
         <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
     </padding>
 
-    <Label fx:id="titleText" alignment="CENTER" prefHeight="230.0" prefWidth="980.0" text="TRUTH OR DARE" textAlignment="CENTER" wrapText="true" styleClass="titleLabel">
+    <Label fx:id="titleText" alignment="CENTER" prefHeight="230.0" prefWidth="980.0" styleClass="display-label" text="TRUTH OR DARE" textAlignment="CENTER" wrapText="true">
         <font>
             <Font name="Century Gothic Bold" size="34.0" />
         </font>
@@ -22,41 +22,41 @@
                     <Font name="Century Gothic Bold" size="34.0" />
                 </font>
             </Button>
-            <Label fx:id="orText" alignment="CENTER" prefHeight="100.0" prefWidth="117.0" text="OR" textFill="WHITE">
+            <Label fx:id="orText" alignment="CENTER" prefHeight="100.0" prefWidth="117.0" styleClass="display-label" text="OR">
                 <font>
                     <Font name="Century Gothic Bold" size="34.0" />
                 </font>
             </Label>
-            <Button alignment="CENTER" layoutX="417.0" layoutY="35.0" onAction="#onDareButtonClick" style="-fx-background-color: #cc3333; -fx-border-color: #000000; -fx-border-insets: -1;" text="DARE" textFill="WHITE">
+            <Button alignment="CENTER" onAction="#onDareButtonClick" styleClass="dare-button" text="DARE">
                 <font>
                     <Font name="Century Gothic Bold" size="34.0" />
                 </font>
             </Button>
         </children>
     </HBox>
-    <Label fx:id="displayText" alignment="CENTER" prefHeight="104.0" prefWidth="860.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+    <Label fx:id="displayText" alignment="CENTER" prefHeight="104.0" prefWidth="860.0" styleClass="display-label" textAlignment="CENTER" wrapText="true">
         <font>
             <Font name="Century Gothic Bold" size="34.0" />
         </font>
     </Label>
    <HBox alignment="CENTER" prefHeight="54.0" prefWidth="816.0">
       <children>
-          <Label fx:id="ratingsLabel" alignment="CENTER" prefHeight="54.0" prefWidth="187.0" text="Select Rating:    " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+          <Label fx:id="ratingsLabel" alignment="CENTER" prefHeight="54.0" prefWidth="187.0" styleClass="choice-box-label" text="Select Rating:    " textAlignment="CENTER" wrapText="true">
               <font>
                   <Font name="Century Gothic Bold" size="20.0" />
               </font>
           </Label>
-         <ChoiceBox fx:id="ratingChoiceBox" prefHeight="25.0" prefWidth="64.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" />
+         <ChoiceBox fx:id="ratingChoiceBox" prefHeight="25.0" prefWidth="64.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" styleClass="choice-box" />
       </children>
    </HBox>
     <HBox alignment="CENTER" prefHeight="54.0" prefWidth="816.0">
         <children>
-            <Label fx:id="themeLabel" alignment="CENTER" prefHeight="54.0" prefWidth="187.0" text="Select Theme:         " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Label fx:id="themeLabel" alignment="CENTER" prefHeight="54.0" prefWidth="187.0" styleClass="choice-box-label" text="Select Theme:         " textAlignment="CENTER" wrapText="true">
                 <font>
                     <Font name="Century Gothic Bold" size="20.0" />
                 </font>
             </Label>
-            <ChoiceBox fx:id="themeChoiceBox" prefHeight="25.0" prefWidth="256.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" />
+            <ChoiceBox fx:id="themeChoiceBox" prefHeight="25.0" prefWidth="91.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" styleClass="choice-box" />
         </children>
     </HBox>
 </VBox>

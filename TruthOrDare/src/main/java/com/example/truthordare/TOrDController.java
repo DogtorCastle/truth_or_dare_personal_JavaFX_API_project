@@ -80,9 +80,7 @@ public class TOrDController {
             APIResponse parsedResponse= mapper.readValue(questionResponse.body(), APIResponse.class);
             question = parsedResponse.question;
         } catch(Exception e) {
-            System.out.println(e.getCause());
-            e.printStackTrace();
-            question = emergency_question_list[random.nextInt(emergency_question_list.length)] + "\n[slow down for API]";
+            question = emergency_question_list[random.nextInt(emergency_question_list.length)] + "\n[API ERROR]";
         }
         return question;
     }

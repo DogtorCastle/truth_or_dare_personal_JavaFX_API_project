@@ -9,7 +9,7 @@ public class ThemeHandler {
     private static final String PRIDE_THEME = TOrDApplication.class.getResource("PrideTheme.css").toExternalForm();
 
     protected static Scene sceneCopy;
-    protected static String[] themes = {"Original", "Dark", "Hotline Miami", "Pan Pride"};
+    protected static String[] themes = {"Original", "Dark", "Hotline Miami", "Pride"};
 
 
     public static void init(Scene scene) {
@@ -20,7 +20,7 @@ public class ThemeHandler {
             case "Original" -> DEFAULT_THEME;
             case "Dark" -> DARK_DEFAULT_THEME;
             case "Hotline Miami" -> HOTLINE_MIAMI_THEME;
-            case "Pan Pride" -> PRIDE_THEME;
+            case "Pride" -> PRIDE_THEME;
             default -> DEFAULT_THEME;
         };
         sceneCopy.getStylesheets().clear();

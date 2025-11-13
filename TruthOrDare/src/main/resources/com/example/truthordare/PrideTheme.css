@@ -1,4 +1,7 @@
 /*Each of these only specifies changes in colour, not of font etc. (except for .choice-box)*/
+
+/*Labels show what colour they were originally, this is to help me set out a godo equivalent*/
+
 .background {
     -fx-background-color: linear-gradient(to bottom, #FF218C, #21B1FF); /* Default background color (teal) */
 }
@@ -12,13 +15,13 @@
 .truth-button {
     -fx-background-color: #F5A9B8; /* Deep blue background */
     -fx-text-fill: white;          /* White text */
-    -fx-border-color: red;       /* Black border */
+    -fx-border-color: yellow;       /* Black border */
 }
 
 .dare-button {
     -fx-background-color: #5BCEFA; /* Deep red background */
     -fx-text-fill: white;          /* White text */
-    -fx-border-color: red;       /* Black border */
+    -fx-border-color: yellow;       /* Black border */
 }
 
 /*Choice boxes*/

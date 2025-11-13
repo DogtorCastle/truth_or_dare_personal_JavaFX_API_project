@@ -36,9 +36,10 @@ public class TOrDController {
 
     @FXML
     public void initialize(){
+        //initialise and set up ratings choice box
         ratingChoiceBox.getItems().addAll(ratings);
         ratingChoiceBox.setValue("pg");
-
+        //initialise and set up listener for theme choice box
         themeChoiceBox.getItems().addAll(themes);
         themeChoiceBox.setValue("Original"); // Set a default theme
         themeChoiceBox.getSelectionModel().selectedItemProperty().addListener(
